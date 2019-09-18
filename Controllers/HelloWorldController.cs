@@ -12,14 +12,14 @@ namespace MvcMovie.Controllers
         }
 
         // Get /HelloWorld/route
-        // Se llama una ruta especializada
+        // Se llama una ruta espcífica
         public string Route()
         {
             return "Un controlador puede implementar más de una ruta";
         }
 
         // Get: /HelloWorld/query/
-        // Se llama el método pasando la cadena completa de parémtros 
+        // Se llama el método pasando la cadena completa de parámetros 
         public string Query(string name, int param)
         {
             return $"Hola {name}, el valor del parámetro es {param}";
