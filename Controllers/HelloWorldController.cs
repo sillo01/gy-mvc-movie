@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using System.Text.Encodings.Web;
 
 namespace MvcMovie.Controllers
 {
@@ -29,7 +28,7 @@ namespace MvcMovie.Controllers
         // Se llama el método siguiendo la convención de la plantilla
         public string Template(string name, int id)
         {
-            return HtmlEncoder.Default.Encode($"Hola {name}, el valor del ID es {id}");
+            return $"Hola {name}, el valor del ID es {id}";
         }
     }
 }
